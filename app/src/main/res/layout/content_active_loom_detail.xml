@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.genesisdigisec.loom.ActiveLoomDetail"
+    tools:showIn="@layout/activity_active_loom_detail">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="50px"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="20px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:paddingTop="20px"
+                    android:paddingLeft="40px"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Employee Name"
+                    android:id="@+id/dempname"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/dEmpName"
+                    android:paddingTop="20px"
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/dempname"
+                    android:layout_height="wrap_content"
+                    android:text="Test"/>
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="20px"
+                    android:paddingLeft="40px"
+                    android:layout_width="200dp"
+                    android:layout_below="@id/dempname"
+                    android:layout_height="wrap_content"
+                    android:text="Entry Date"
+                    android:id="@+id/ded"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="20px"
+                    android:id="@+id/dEntryDate"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/dempname"
+                    android:layout_toRightOf="@+id/ded"
+                    android:layout_height="wrap_content"
+                    android:text="Test"/>
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="20px"
+                    android:paddingLeft="40px"
+                    android:layout_below="@+id/ded"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Shift"
+                    android:id="@+id/dshift"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="20px"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/ded"
+                    android:layout_toRightOf="@+id/dshift"
+                    android:id="@+id/dShift"
+                    android:layout_height="wrap_content"
+                    android:text="Test"/>
+
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="20px"
+                    android:paddingLeft="40px"
+                    android:layout_below="@+id/dshift"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Loom No"
+                    android:id="@+id/dloom"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="20px"
+                    android:id="@+id/dLoomNo"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/dshift"
+                    android:layout_toRightOf="@+id/dloom"
+                    android:layout_height="wrap_content"
+                    android:text="Test"/>
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="20px"
+                    android:paddingLeft="40px"
+                    android:layout_below="@+id/dloom"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Start Reading"
+                    android:id="@+id/dstart_reading"
+                    android:textAllCaps="true"/>
+
+                <TextView
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingTop="20px"
+                    android:id="@+id/dStartReading"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/dLoomNo"
+                    android:layout_toRightOf="@+id/dstart_reading"
+                    android:layout_height="wrap_content"
+                    android:text="Test"/>
+
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:paddingLeft="40px"
+                    android:layout_below="@+id/dstart_reading"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="End Reading"
+                    android:id="@+id/dend_reading"
+                    android:textAllCaps="true"/>
+
+                <EditText
+                    android:textSize="16dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:paddingBottom="20px"
+                    android:paddingTop="20px"
+                    android:id="@+id/dEndReading"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/dStartReading"
+                    android:layout_toRightOf="@+id/dend_reading"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:hint="Enter end reading"/>
+
+                <Button
+                    android:layout_marginTop="250px"
+                    android:layout_marginBottom="30px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="200px"
+                    android:paddingRight="200px"
+                    android:text="Submit"
+                    android:id="@+id/btSubmit"
+                    android:textAllCaps="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/dshift"/>
+
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

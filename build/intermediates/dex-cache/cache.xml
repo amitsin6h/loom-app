@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/home/amitsin6h/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit/retrofit/1.9.0/a681c044244d9fc375198588297a39ba78028423/retrofit-1.9.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a681c044244d9fc375198588297a39ba78028423">
+        <dex dex="/home/amitsin6h/Loom/app/build/intermediates/pre-dexed/debug/retrofit-1.9.0_fc0162fae2880d96355323b7cd87ccb84c96b461.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/amitsin6h/.gradle/caches/modules-2/files-2.1/com.mcxiaoke.volley/library/1.0.19/a8f23f65fc1e522ee4a1a697ee569901a46741fa/library-1.0.19.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="a8f23f65fc1e522ee4a1a697ee569901a46741fa">
+        <dex dex="/home/amitsin6h/Loom/app/build/intermediates/pre-dexed/debug/library-1.0.19_47f3e2174350b517f768d1a5113068c13a6cef14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/amitsin6h/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/home/amitsin6h/Loom/app/build/intermediates/pre-dexed/debug/gson-2.3.1_0eae26b5f3969ef73f42beb5377db48918f1d007.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/amitsin6h/.android/build-cache/f1ec5b516e7584af000f28d8915b9efd523c5732/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d0df3bf618b078d102a4234ceff33c44026e64b9">
+        <dex dex="/home/amitsin6h/Loom/app/build/intermediates/pre-dexed/debug/classes_7895e45fe1b52e24cd3df9c361f42888f003cc3c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/amitsin6h/.android/build-cache/6f44aae52e31ae324f9d77f41651f728a567e447/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="eb02fb0b3792476a970d29ba9905d3a2df6dd056">
+        <dex dex="/home/amitsin6h/Loom/app/build/intermediates/pre-dexed/debug/classes_0cea0e5d756ebc9211ece9dd927ac298ea0bcd6c.jar" />
+    </item>
+
+</items>

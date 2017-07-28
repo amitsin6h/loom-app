@@ -1,0 +1,220 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.genesisdigisec.loom.AddLoomFragment">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/card">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp">
+
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="BASIC DETAILS"
+                   android:textStyle="bold"
+                   android:id="@+id/basicdetails"
+                   android:textSize="20dp"
+                   android:gravity="center" />
+
+
+
+               <com.ahmadrosid.library.FloatingLabelEditText
+                   android:paddingTop="40dp"
+                   android:id="@+id/ftDate"
+                   android:layout_width="180sp"
+                   android:paddingRight="20sp"
+                   android:clickable="false"
+                   app:editText_color="@color/colorAccent"
+                   android:focusableInTouchMode="false"
+                   android:focusable="false"
+                   android:layout_height="wrap_content"
+                   app:editText_hint="Date"/>
+
+               <fr.ganfra.materialspinner.MaterialSpinner
+                   android:paddingTop="38dp"
+                   android:id="@+id/spShift"
+                   android:layout_width="180sp"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="1sp"
+                   app:ms_hint="Day/Night"
+                   app:ms_floatingLabelColor="@color/colorAccent"
+                   app:ms_floatingLabelText="Shift"
+                   android:layout_toRightOf="@+id/ftDate"/>
+
+               <com.ahmadrosid.library.FloatingLabelEditText
+                   android:paddingTop="20dp"
+                   android:id="@+id/ftLoomNo"
+                   android:layout_width="180sp"
+                   android:inputType="phone"
+                   app:editText_color="@color/colorAccent"
+                   android:paddingRight="20sp"
+                   android:layout_height="wrap_content"
+                   app:editText_hint="Loom Number"
+                   android:layout_below="@+id/ftDate"/>
+
+               <com.ahmadrosid.library.FloatingLabelEditText
+                   android:paddingTop="15dp"
+                   android:layout_width="180sp"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/ftLoomNo"
+                   android:layout_below="@+id/spShift"
+                   android:paddingLeft="1sp"
+                   app:editText_color="@color/colorAccent"
+                   android:id="@+id/ftQuality"
+                   app:editText_hint="Quality"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+
+
+        <!--Employee details-->
+        <android.support.v7.widget.CardView
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingRight="10dp">
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:text="EMPLOYEE DETAILS"
+                   android:id="@+id/empDetails"
+                   android:textSize="20dp"
+                   android:gravity="center"
+                   />
+
+
+
+               <com.ahmadrosid.library.FloatingLabelEditText
+                   android:paddingTop="20dp"
+                   android:id="@+id/ftempCode"
+                   android:layout_below="@+id/empDetails"
+                   android:layout_width="160sp"
+                   android:paddingRight="10sp"
+                   android:clickable="false"
+                   app:editText_color="@color/colorAccent"
+                   android:focusableInTouchMode="false"
+                   android:focusable="false"
+                   android:layout_height="wrap_content"
+                   app:editText_hint="Employee Code"/>
+
+               <com.ahmadrosid.library.FloatingLabelEditText
+                   android:paddingTop="20dp"
+                   android:id="@+id/ftempName"
+                   android:layout_width="180sp"
+                   app:editText_color="@color/colorAccent"
+                   android:layout_height="wrap_content"
+                   android:paddingLeft="0sp"
+                   android:layout_below="@+id/empDetails"
+                   app:editText_hint="Employee Name"
+                   android:layout_toRightOf="@+id/ftempCode"/>
+
+               <com.ahmadrosid.library.FloatingLabelEditText
+                   android:paddingTop="20dp"
+                   android:id="@+id/ftStart"
+                   android:layout_width="180sp"
+                   android:paddingRight="20sp"
+                   android:layout_height="wrap_content"
+                   app:editText_hint="Start Reading"
+                   android:layout_below="@+id/ftempName"/>
+
+               <com.ahmadrosid.library.FloatingLabelEditText
+                   android:paddingTop="20dp"
+                   android:layout_width="180sp"
+                   app:editText_color="@color/colorAccent"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/ftStart"
+                   android:paddingLeft="20sp"
+                   android:layout_below="@+id/ftempName"
+                   android:id="@+id/ftEnd"
+                   app:editText_hint="End Reading"/>
+
+               <com.ahmadrosid.library.FloatingLabelEditText
+                   android:paddingTop="20dp"
+                   android:id="@+id/ftProduction"
+                   android:layout_width="120sp"
+                   android:paddingRight="10sp"
+                   app:editText_color="@color/colorAccent"
+                   android:layout_height="wrap_content"
+                   app:editText_hint="Production"
+                   android:layout_below="@+id/ftStart"/>
+
+               <fr.ganfra.materialspinner.MaterialSpinner
+                   android:paddingTop="20dp"
+                   android:layout_width="90sp"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/ftProduction"
+                   android:paddingLeft="0sp"
+                   android:layout_below="@+id/ftStart"
+                   android:id="@+id/spMess"
+                   app:ms_hint="Mess"
+                   app:ms_floatingLabelColor="@color/colorAccent"
+                   app:ms_floatingLabelText="Mess"/>
+
+               <com.ahmadrosid.library.FloatingLabelEditText
+                   android:paddingTop="20dp"
+                   android:layout_width="120sp"
+                   app:editText_color="@color/colorAccent"
+                   android:layout_height="wrap_content"
+                   android:layout_toRightOf="@+id/spMess"
+                   android:paddingLeft="10sp"
+                   android:layout_below="@+id/ftEnd"
+                   android:id="@+id/ftRemarks"
+                   app:editText_hint="Remarks"/>
+
+
+               <Button
+                   android:layout_below="@+id/spMess"
+                   android:textAlignment="center"
+                   android:layout_marginTop="20dp"
+                   android:layout_marginBottom="30dp"
+                   android:layout_centerHorizontal="true"
+                   android:layout_width="200sp"
+                   android:textColor="#fff"
+                   android:id="@+id/btAddentry"
+                   android:background="#3C8DBC"
+                   android:layout_height="wrap_content"
+                   android:text="Add Entry"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</FrameLayout>
